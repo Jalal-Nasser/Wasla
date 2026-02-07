@@ -6,11 +6,10 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  // put application routes here
-  // prefix all routes with /api
-
-  // use storage to perform CRUD operations on the storage interface
-  // e.g. storage.insertUser(user) or storage.getUserByUsername(username)
+  // API Routes are placeholders as this is a frontend-only demo
+  app.get("/api/health", (req, res) => {
+    res.json({ status: "ok", mode: "frontend-only" });
+  });
 
   return httpServer;
 }
