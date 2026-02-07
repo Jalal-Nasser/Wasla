@@ -1,0 +1,132 @@
+You are a senior frontend architect.
+
+Build a FRONTEND-ONLY multi-tenant SaaS application inspired by Salla.sa.
+
+================================================
+ABSOLUTE CONSTRAINTS (DO NOT BREAK)
+================================================
+- Frontend only (NO backend, NO APIs, NO auth)
+- Use mock JSON data only
+- Arabic (RTL) is the default language
+- English (LTR) is secondary
+- Enterprise-grade SaaS UI quality
+- Scalable, maintainable architecture
+- Clean, well-commented code
+
+================================================
+TECH STACK
+================================================
+- Next.js 14 (App Router)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Zustand (state management)
+- next-intl (internationalization)
+- Lucide-react icons
+
+================================================
+BRANDING & THEME
+================================================
+- Primary color: PRIMARY_COLOR
+- Secondary color: SECONDARY_COLOR
+- Accent color: ACCENT_COLOR
+- Light & Dark mode
+- High contrast for Arabic text
+- Dashboard-style UI similar to Salla.sa
+
+================================================
+LANGUAGES & DIRECTION
+================================================
+- Default language: Arabic (ar)
+- Secondary language: English (en)
+- Arabic = RTL
+- English = LTR
+- Direction must auto-switch by locale
+- Use logical Tailwind utilities (ps/pe, ms/me)
+
+================================================
+MODULES TO IMPLEMENT
+================================================
+
+--------------------------------
+1️⃣ PUBLIC STOREFRONT (UI ONLY)
+--------------------------------
+- Store home page
+- Categories section
+- Product listing page (grid, filters UI)
+- Product details page (gallery, price, variants UI)
+- Cart page
+- Checkout page (mock form only)
+- Mobile-first, RTL-first design
+
+--------------------------------
+2️⃣ SELLER DASHBOARD
+--------------------------------
+- Dashboard overview
+- Orders table
+- Products management UI
+- Customers list
+- Basic analytics (charts with mock data)
+- RTL tables and forms
+
+--------------------------------
+3️⃣ TENANT / ADMIN DASHBOARD
+--------------------------------
+- Tenant overview
+- Store management UI
+- Subscription & plan comparison (mock)
+- Roles & permissions UI
+- Tenant settings pages
+
+--------------------------------
+4️⃣ CLIENT DASHBOARD
+--------------------------------
+- Orders history
+- Profile settings
+- Addresses UI
+- Wishlist UI
+- Account preferences
+
+================================================
+GLOBAL UI SYSTEM
+================================================
+- SaaS shell layout (topbar + sidebar)
+- RTL-aware collapsible sidebar
+- Breadcrumbs
+- Notifications dropdown
+- User menu (avatar, settings)
+- Responsive (desktop + mobile)
+- Accessible components
+
+================================================
+INTERNATIONALIZATION (i18n)
+================================================
+- Use next-intl
+- Route-based locales (/ar, /en)
+- Arabic default routing
+- Scalable translation JSON structure
+- Translate navigation, forms, tables, empty states
+
+================================================
+DELIVERABLES
+================================================
+- Complete folder structure
+- Tailwind configuration with RTL support
+- Theme setup using brand colors
+- Layout components
+- Pages and reusable components
+- Mock data files
+- Clear inline comments explaining:
+  - RTL strategy
+  - Layout decisions
+  - State management
+  - i18n handling
+
+================================================
+OUTPUT RULES
+================================================
+- Generate code in correct logical order
+- Do NOT skip setup/config files
+- Keep components reusable
+- Follow Next.js 14 best practices
+- Briefly explain important architectural choices
