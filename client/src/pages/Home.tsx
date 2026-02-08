@@ -53,12 +53,10 @@ export default function Home() {
             >
               <div className="relative aspect-square max-w-md mx-auto">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-                {/* Shopping illustration from Unsplash */}
-                {/* Woman holding shopping bags looking happy */}
                 <img 
-                  src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80"
-                  alt="Shopping"
-                  className="relative z-10 rounded-3xl shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 object-cover w-full h-full border-4 border-background"
+                  src="/hero-illustration.png"
+                  alt="Waslah E-commerce Illustration"
+                  className="relative z-10 rounded-3xl shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 object-contain w-full h-full"
                 />
               </div>
             </motion.div>
