@@ -60,7 +60,7 @@ export const MOCK_PRODUCTS: Product[] = [
     stock: 1000,
     isDigital: true,
   },
-    {
+  {
     id: 5,
     nameAr: "كرسي مكتب مريح",
     nameEn: "Ergonomic Office Chair",
@@ -106,4 +106,72 @@ export const MOCK_TENANTS: Tenant[] = [
   { id: 1, name: "متجر الفخامة", domain: "luxury.waslah.com", plan: "pro", status: "active" },
   { id: 2, name: "تقنيات المستقبل", domain: "tech.waslah.com", plan: "basic", status: "active" },
   { id: 3, name: "عطور الشرق", domain: "perfumes.waslah.com", plan: "enterprise", status: "active" },
+];
+
+export const MOCK_ADDRESSES: any[] = [
+  {
+    id: 1,
+    fullName: "أحمد محمد العلي",
+    phone: "+966 50 123 4567",
+    city: "الرياض",
+    district: "حي السليمانية",
+    street: "شارع الملك فهد",
+    buildingNumber: "1234",
+    postalCode: "12345",
+    isDefault: true,
+  },
+  {
+    id: 2,
+    fullName: "أحمد محمد العلي",
+    phone: "+966 50 123 4567",
+    city: "جدة",
+    district: "حي الحمراء",
+    street: "شارع التحلية",
+    buildingNumber: "5678",
+    postalCode: "23456",
+    isDefault: false,
+  },
+];
+
+export const MOCK_WISHLIST_ITEMS: number[] = [1, 2, 3];
+
+export interface WalletTransaction {
+  id: number;
+  type: "refund" | "purchase" | "cashback" | "bonus";
+  amount: number;
+  description: string;
+  date: string;
+}
+
+export const MOCK_WALLET_BALANCE = 245.50;
+
+export const MOCK_WALLET_TRANSACTIONS: WalletTransaction[] = [
+  {
+    id: 1,
+    type: "cashback",
+    amount: 25.50,
+    description: "مكافأة شراء أكثر من 500 ريال",
+    date: "2024-05-20",
+  },
+  {
+    id: 2,
+    type: "purchase",
+    amount: -350,
+    description: "شراء #1002",
+    date: "2024-05-18",
+  },
+  {
+    id: 3,
+    type: "refund",
+    amount: 199,
+    description: "استرجاع طلب #989",
+    date: "2024-05-15",
+  },
+  {
+    id: 4,
+    type: "bonus",
+    amount: 50,
+    description: "مكافأة تسجيل العضوية",
+    date: "2024-05-01",
+  },
 ];

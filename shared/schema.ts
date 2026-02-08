@@ -42,13 +42,27 @@ export const tenants = pgTable("tenants", {
   status: text("status").default("active"),
 });
 
+export const addresses = pgTable("addresses", {
+  id: serial("id").primaryKey(),
+  fullName: text("full_name").notNull(),
+  phone: text("phone").notNull(),
+  city: text("city").notNull(),
+  district: text("district").notNull(),
+  street: text("street").notNull(),
+  buildingNumber: text("building_number"),
+  postalCode: text("postal_code"),
+  isDefault: boolean("is_default").default(false),
+});
+
 // Zod Schemas
 export const insertProductSchema = createInsertSchema(products);
 export const insertCategorySchema = createInsertSchema(categories);
 export const insertOrderSchema = createInsertSchema(orders);
 export const insertTenantSchema = createInsertSchema(tenants);
+export const insertAddressSchema = createInsertSchema(addresses);
 
 export type Product = typeof products.$inferSelect;
 export type Category = typeof categories.$inferSelect;
 export type Order = typeof orders.$inferSelect;
 export type Tenant = typeof tenants.$inferSelect;
+export type Address = typeof addresses.$inferSelect;

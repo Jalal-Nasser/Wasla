@@ -9,24 +9,25 @@
   --background: 0 0% 100%;
   --foreground: 222 47% 11%;
 
-  /* Teal Brand Colors (Salla-like) */
-  --primary: 172 100% 37%;      /* #00BFA5 - Vibrant Teal */
+  /* Waslah Brand Colors - Blue and Orange from logo */
+  --primary: 207 90% 54%;        /* #1E90FF - Waslah Logo Blue */
   --primary-foreground: 0 0% 100%;
+--orange: 24 100% 50%;        /* #FF7F00 - Waslah Logo Orange (accent) */
 
   /* Secondary / Muted */
   --secondary: 210 40% 96.1%;
   --secondary-foreground: 222 47% 11.2%;
   --muted: 210 40% 96.1%;
   --muted-foreground: 215.4 16.3% 46.9%;
-  --accent: 172 66% 96%;        /* Light Teal tint */
-  --accent-foreground: 172 100% 30%;
+  --accent: 207 95% 94%;        /* Light Blue tint */
+  --accent-foreground: 207 90% 40%;
 
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
 
   --border: 214.3 31.8% 91.4%;
   --input: 214.3 31.8% 91.4%;
-  --ring: 172 100% 37%;
+  --ring: 207 90% 54%;
 
   --radius: 0.75rem;
 

@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { Product } from '@shared/schema';
 import { persist } from 'zustand/middleware';
+import i18n from '@/i18n/config';
 
 type Locale = 'ar' | 'en';
 
@@ -27,6 +28,7 @@ export const useStore = create<AppState>()(
           const newLocale = state.locale === 'ar' ? 'en' : 'ar';
           document.documentElement.dir = newLocale === 'ar' ? 'rtl' : 'ltr';
           document.documentElement.lang = newLocale;
+          i18n.changeLanguage(newLocale); // Update i18n language
           return { locale: newLocale };
         }),
       cart: [],
